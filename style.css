@@ -9,6 +9,7 @@ body {
 }
 
 /* Navigation Styles */
+
 nav {
     background-color: #f8f9fa;
     padding:  20px;
@@ -26,9 +27,14 @@ nav ul li {
     margin-right: 20px;
 }
 
-/* nav ul li:last-child {
-    margin-right: 0;
-} */
+
+nav ul li.brand {
+    margin-right: auto; /* Push the brand logo to the start */
+}
+
+nav ul li.login-btn {
+    margin-left: auto; /* Push the login button to the end */
+}
 
 .brand img {
     max-height: 75px;
@@ -69,12 +75,13 @@ nav ul li {
     top: 0;
     left: 0;
     opacity: 0;
-    animation: imagefade 8s infinite;
+    animation: ima 8s infinite;
 }
+
 .knu {
     text-align: center;
 }
-@keyframes imagefade {
+@keyframes ima {
     0%, 100% {
         opacity: 0;
     }
@@ -107,7 +114,7 @@ nav ul li.login-btn {
 nav ul li.login-btn a {
     background-color: #17a2b8;
     color: white;
-    padding: 10px 20px;
+    padding:10px 20px;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s;
@@ -266,6 +273,7 @@ p {
 .contact-form button:hover {
     background-color: #138496;
 }
+
 .flex-container {
     display: flex;
     justify-content: space-around; /* Adjust as needed */
@@ -273,8 +281,6 @@ p {
 .Sec_Heading{
     text-align: center;
 }
-
-
 
 .offer-container {
     display: flex;
@@ -330,6 +336,7 @@ p {
     display: flex;
     justify-content: space-between;
 }
+
 .footer-text {
     flex: 1;
     margin-right: 20px;
@@ -348,8 +355,6 @@ p {
     margin-left: 400px;
     padding-left: 400px;
 }
-
-
 
 .container2 {
     display: flex;
